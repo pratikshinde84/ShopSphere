@@ -2,10 +2,10 @@ import java.util.*;
 class Practical{
     static String oneTimePad(String plainText,String key){
         StringBuilder cipherText=new StringBuilder();
-        for(int i=0;i<plainText.length();i++){
+        for(int i=0;i<plainText.length();i++){   
             int p=plainText.charAt(i)-'A';
             int k=key.charAt(i)-'A';
-            char c=(char)('A'+((p+k)%26));
+            char c=(char)('A'+((p+k)%26));   
             cipherText.append(c);
         }
         System.out.println("Cipher Text: "+cipherText.toString());
