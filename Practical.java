@@ -11,7 +11,7 @@ class Practical{
         System.out.println("Cipher Text: "+cipherText.toString());
         return cipherText.toString();
 
-        
+
     }     
     static void decrypt(String plainText,String key){
         StringBuilder plain=new StringBuilder();
