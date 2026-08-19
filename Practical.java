@@ -10,9 +10,9 @@ class Practical{
         } 
         System.out.println("Cipher Text: "+cipherText.toString());
         return cipherText.toString();
-    }
+    } 
     static void decrypt(String plainText,String key){
-        StringBuilder plain=new StringBuilder();
+        StringBuilder plain=new StringBuilder();    
         for(int i=0;i<plainText.length();i++){
             int c=plainText.charAt(i)-'A';
             int k=key.charAt(i)-'A';
