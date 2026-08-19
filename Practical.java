@@ -13,7 +13,7 @@ class Practical{
     } 
     static void decrypt(String plainText,String key){
         StringBuilder plain=new StringBuilder();    
-        for(int i=0;i<plainText.length();i++){
+        for(int i=0;i<plainText.length();i++){   
             int c=plainText.charAt(i)-'A';
             int k=key.charAt(i)-'A';  
             char p=(char)('A'+((c-k+26)%26));
